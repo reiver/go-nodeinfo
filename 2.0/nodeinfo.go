@@ -6,7 +6,7 @@ import (
 
 type NodeInfo struct {
 	Software Software
-	Protocols Protocols
+	Protocols []string
 	Services Services
 	OpenRegistrations bool
 	Usage Usage
@@ -14,7 +14,7 @@ type NodeInfo struct {
 }
 
 func (receiver NodeInfo) MarshalJSON() ([]byte, error) {
-	const version string = "1.0"
+	const version string = "2.0"
 
-	return internal.NodeInfo1MarshalJSON(version, receiver.Software, receiver.Protocols, receiver.Services, receiver.OpenRegistrations, receiver.Usage, receiver.MetaData)
+	return internal.NodeInfo2MarshalJSON(version, receiver.Software, receiver.Protocols, receiver.Services, receiver.OpenRegistrations, receiver.Usage, receiver.MetaData)
 }

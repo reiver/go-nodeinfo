@@ -16,5 +16,5 @@ type NodeInfo struct {
 func (receiver NodeInfo) MarshalJSON() ([]byte, error) {
 	const version string = "1.1"
 
-	return internal.NodeInfoMarshalJSON(version, receiver.Software,  receiver.Protocols,  receiver.Services,  receiver.OpenRegistrations,  receiver.Usage,  receiver.MetaData)
+	return internal.NodeInfo1MarshalJSON(version, receiver.Software,  receiver.Protocols,  receiver.Services,  receiver.OpenRegistrations,  receiver.Usage,  receiver.MetaData)
 }

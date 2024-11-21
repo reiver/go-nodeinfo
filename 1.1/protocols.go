@@ -4,4 +4,4 @@ import (
 	"github.com/reiver/go-nodeinfo/shared"
 )
 
-type Protocols = shared.Protocols
+type Protocols = shared.Protocols1
