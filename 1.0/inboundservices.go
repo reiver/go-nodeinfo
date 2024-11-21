@@ -1,7 +1,11 @@
 package nodeinfo
 
+import (
+	"github.com/reiver/go-nodeinfo/shared"
+)
+
 const (
-	ServiceInboundAppNet    = "appnet"
-	ServiceInboundGNUSocial = "gnusocial"
-	ServiceInboundPumpIO    = "pumpio"
+	ServiceInboundAppNet    = shared.ServiceInboundAppNet
+	ServiceInboundGNUSocial = shared.ServiceInboundGNUSocial
+	ServiceInboundPumpIO    = shared.ServiceInboundPumpIO
 )
