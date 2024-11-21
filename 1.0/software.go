@@ -1,6 +1,7 @@
 package nodeinfo
 
-type Software struct {
-	Name    string `json:"name"`
-	Version string `json:"version"`
-}
+import (
+	"github.com/reiver/go-nodeinfo/shared"
+)
+
+type Software = shared.Software
