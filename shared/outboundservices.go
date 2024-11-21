@@ -27,4 +27,5 @@ const (
 	ServiceOutboundTwitter       = "twitter"
 	ServiceOutboundWordPress     = "wordpress"
 	ServiceOutboundXMPP          = "xmpp"
+	ServiceOutboundZot           = "zot"
 )
