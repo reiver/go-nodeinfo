@@ -1,6 +1,6 @@
 package shared
 
-type Software struct {
+type Software1 struct {
 	Name    string `json:"name"`
 	Version string `json:"version"`
 }
