@@ -1,7 +1,11 @@
 package nodeinfo
 
+import (
+	"github.com/reiver/go-nodeinfo/shared"
+)
+
 const (
-	SoftwareNameDiaspora  = "diaspora"
-	SoftwareNameFriendica = "friendica"
-	SoftwareNameRedMatrix = "redmatrix"
+	SoftwareNameDiaspora  = shared.SoftwareNameDiaspora
+	SoftwareNameFriendica = shared.SoftwareNameFriendica
+	SoftwareNameRedMatrix = shared.SoftwareNameRedMatrix
 )
