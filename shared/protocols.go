@@ -1,4 +1,4 @@
-package nodeinfo
+package shared
 
 const (
 	ProtocolActivityPub = "activitypub"
