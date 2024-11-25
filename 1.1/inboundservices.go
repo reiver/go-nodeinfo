@@ -5,8 +5,8 @@ import (
 )
 
 const (
-	ServiceInboundAppNet    = shared.ServiceInboundAppNet
-	ServiceInboundGNUSocial = shared.ServiceInboundGNUSocial
-	ServiceInboundPumpIO    = shared.ServiceInboundPumpIO
-	ServiceInboundZot       = shared.ServiceInboundZot
+	ServiceInboundAppNet    = shared.ServiceInboundAppNet    // "appnet"
+	ServiceInboundGNUSocial = shared.ServiceInboundGNUSocial // "gnusocial"
+	ServiceInboundPumpIO    = shared.ServiceInboundPumpIO    // "pumpio"
+	ServiceInboundZot       = shared.ServiceInboundZot       // "zot"
 )
