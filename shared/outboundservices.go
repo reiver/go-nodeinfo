@@ -2,6 +2,7 @@ package shared
 
 const (
 	ServiceOutboundAppNet        = "appnet"
+	ServiceOutboundAtom1         = "atom1.0"
 	ServiceOutboundBlogger       = "blogger"
 	ServiceOutboundBuddycloud    = "buddycloud"
 	ServiceOutboundDiaspora      = "diaspora"
@@ -18,9 +19,11 @@ const (
 	ServiceOutboundMediaGoblin   = "mediagoblin"
 	ServiceOutboundMySpace       = "myspace"
 	ServiceOutboundPinterest     = "pinterest"
+	ServiceOutboundPnut          = "pnut"
 	ServiceOutboundPosterous     = "posterous"
 	ServiceOutboundPumpIO        = "pumpio"
 	ServiceOutboundRedMatrix     = "redmatrix"
+	ServiceOutboundRSS2          = "rss2.0"
 	ServiceOutboundSMTP          = "smtp"
 	ServiceOutboundTent          = "tent"
 	ServiceOutboundTumblr        = "tumblr"
