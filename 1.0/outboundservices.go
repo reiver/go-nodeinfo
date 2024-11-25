@@ -5,30 +5,30 @@ import (
 )
 
 const (
-	ServiceOutboundAppNet        = shared.ServiceOutboundAppNet
-	ServiceOutboundBlogger       = shared.ServiceOutboundBlogger
-	ServiceOutboundBuddycloud    = shared.ServiceOutboundBuddycloud
-	ServiceOutboundDiaspora      = shared.ServiceOutboundDiaspora
-	ServiceOutboundDreamwidth    = shared.ServiceOutboundDreamwidth
-	ServiceOutboundDrupal        = shared.ServiceOutboundDrupal
-	ServiceOutboundFacebook      = shared.ServiceOutboundFacebook
-	ServiceOutboundFriendica     = shared.ServiceOutboundFriendica
-	ServiceOutboundGNUSocial     = shared.ServiceOutboundGNUSocial
-	ServiceOutboundGoogle        = shared.ServiceOutboundGoogle
-	ServiceOutboundInsaneJournal = shared.ServiceOutboundInsaneJournal
-	ServiceOutboundLibertree     = shared.ServiceOutboundLibertree
-	ServiceOutboundLinkedIn      = shared.ServiceOutboundLinkedIn
-	ServiceOutboundLiveJournal   = shared.ServiceOutboundLiveJournal
-	ServiceOutboundMediaGoblin   = shared.ServiceOutboundMediaGoblin
-	ServiceOutboundMySpace       = shared.ServiceOutboundMySpace
-	ServiceOutboundPinterest     = shared.ServiceOutboundPinterest
-	ServiceOutboundPosterous     = shared.ServiceOutboundPosterous
-	ServiceOutboundPumpIO        = shared.ServiceOutboundPumpIO
-	ServiceOutboundRedMatrix     = shared.ServiceOutboundRedMatrix
-	ServiceOutboundSMTP          = shared.ServiceOutboundSMTP
-	ServiceOutboundTent          = shared.ServiceOutboundTent
-	ServiceOutboundTumblr        = shared.ServiceOutboundTumblr
-	ServiceOutboundTwitter       = shared.ServiceOutboundTwitter
-	ServiceOutboundWordPress     = shared.ServiceOutboundWordPress
-	ServiceOutboundXMPP          = shared.ServiceOutboundXMPP
+	ServiceOutboundAppNet        = shared.ServiceOutboundAppNet        // "appnet"
+	ServiceOutboundBlogger       = shared.ServiceOutboundBlogger       // "blogger"
+	ServiceOutboundBuddycloud    = shared.ServiceOutboundBuddycloud    // "buddycloud"
+	ServiceOutboundDiaspora      = shared.ServiceOutboundDiaspora      // "diaspora"
+	ServiceOutboundDreamwidth    = shared.ServiceOutboundDreamwidth    // "dreamwidth"
+	ServiceOutboundDrupal        = shared.ServiceOutboundDrupal        // "drupal"
+	ServiceOutboundFacebook      = shared.ServiceOutboundFacebook      // "facebook"
+	ServiceOutboundFriendica     = shared.ServiceOutboundFriendica     // "friendica"
+	ServiceOutboundGNUSocial     = shared.ServiceOutboundGNUSocial     // "gnusocial"
+	ServiceOutboundGoogle        = shared.ServiceOutboundGoogle        // "google"
+	ServiceOutboundInsaneJournal = shared.ServiceOutboundInsaneJournal // "insanejournal"
+	ServiceOutboundLibertree     = shared.ServiceOutboundLibertree     // "libertree"
+	ServiceOutboundLinkedIn      = shared.ServiceOutboundLinkedIn      // "linkedin"
+	ServiceOutboundLiveJournal   = shared.ServiceOutboundLiveJournal   // "livejournal"
+	ServiceOutboundMediaGoblin   = shared.ServiceOutboundMediaGoblin   // "mediagoblin"
+	ServiceOutboundMySpace       = shared.ServiceOutboundMySpace       // "myspace"
+	ServiceOutboundPinterest     = shared.ServiceOutboundPinterest     // "pinterest"
+	ServiceOutboundPosterous     = shared.ServiceOutboundPosterous     // "posterous"
+	ServiceOutboundPumpIO        = shared.ServiceOutboundPumpIO        // "pumpio"
+	ServiceOutboundRedMatrix     = shared.ServiceOutboundRedMatrix     // "redmatrix"
+	ServiceOutboundSMTP          = shared.ServiceOutboundSMTP          // "smtp"
+	ServiceOutboundTent          = shared.ServiceOutboundTent          // "tent"
+	ServiceOutboundTumblr        = shared.ServiceOutboundTumblr        // "tumblr"
+	ServiceOutboundTwitter       = shared.ServiceOutboundTwitter       // "twitter"
+	ServiceOutboundWordPress     = shared.ServiceOutboundWordPress     // "wordpress"
+	ServiceOutboundXMPP          = shared.ServiceOutboundXMPP          // "xmpp"
 )
