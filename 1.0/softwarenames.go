@@ -5,7 +5,7 @@ import (
 )
 
 const (
-	SoftwareNameDiaspora  = shared.SoftwareNameDiaspora
-	SoftwareNameFriendica = shared.SoftwareNameFriendica
-	SoftwareNameRedMatrix = shared.SoftwareNameRedMatrix
+	SoftwareNameDiaspora  = shared.SoftwareNameDiaspora  // "diaspora"
+	SoftwareNameFriendica = shared.SoftwareNameFriendica // "friendica"
+	SoftwareNameRedMatrix = shared.SoftwareNameRedMatrix // "redmatrix"
 )
