@@ -5,8 +5,8 @@ import (
 )
 
 const (
-	SoftwareNameDiaspora  = shared.SoftwareNameDiaspora
-	SoftwareNameFriendica = shared.SoftwareNameFriendica
-	SoftwareNameHubzilla  = shared.SoftwareNameHubzilla
-	SoftwareNameRedMatrix = shared.SoftwareNameRedMatrix
+	SoftwareNameDiaspora  = shared.SoftwareNameDiaspora  // "diaspora"
+	SoftwareNameFriendica = shared.SoftwareNameFriendica // "friendica"
+	SoftwareNameHubzilla  = shared.SoftwareNameHubzilla  // "hubzilla"
+	SoftwareNameRedMatrix = shared.SoftwareNameRedMatrix // "redmatrix"
 )
