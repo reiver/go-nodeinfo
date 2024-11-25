@@ -2,7 +2,7 @@ package shared
 
 const (
 	ProtocolActivityPub = "activitypub"
-	ProtocolBuddyCloud  = "buddycloud"
+	ProtocolBuddycloud  = "buddycloud"
 	ProtocolDFRN        = "dfrn"
 	ProtocolDiaspora    = "diaspora"
 	ProtocolFriendica   = "friendica"

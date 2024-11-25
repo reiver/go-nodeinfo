@@ -5,7 +5,7 @@ import (
 )
 
 const (
-	ProtocolBuddyCloud  = shared.ProtocolBuddyCloud  // "buddycloud"
+	ProtocolBuddycloud  = shared.ProtocolBuddycloud  // "buddycloud"
 	ProtocolDiaspora    = shared.ProtocolDiaspora    // "diaspora"
 	ProtocolFriendica   = shared.ProtocolFriendica   // "friendica"
 	ProtocolGNUSocial   = shared.ProtocolGNUSocial   // "gnusocial"
