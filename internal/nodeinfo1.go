@@ -46,7 +46,6 @@ func NodeInfo1MarshalJSON(version string, software shared.Software1, protocols s
 
 	{
 		const prefix string = `"protocols":`
-
 		bytes = append(bytes, prefix...)
 
 		value, err := json.Marshal(protocols)
