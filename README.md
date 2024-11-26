@@ -10,9 +10,37 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 
 ## Import
 
-To import package **nodeinfo** use `import` code like the following:
+There are separate sub-packages for each version of **nodeinfo**.
+So, would you import whichever packages you are interested in using.
+
+To import package **nodeinfo** for **nodeinfo 2.2** use `import` code like the following:
+
 ```
-import "github.com/reiver/go-nodeinfo"
+import "github.com/reiver/go-nodeinfo/2.2"
+```
+
+To import package **nodeinfo** for **nodeinfo 2.1** use `import` code like the following:
+
+```
+import "github.com/reiver/go-nodeinfo/2.1"
+```
+
+To import package **nodeinfo** for **nodeinfo 2.0** use `import` code like the following:
+
+```
+import "github.com/reiver/go-nodeinfo/2.0"
+```
+
+To import package **nodeinfo** for **nodeinfo 1.1** use `import` code like the following:
+
+```
+import "github.com/reiver/go-nodeinfo/1.1"
+```
+
+To import package **nodeinfo** for **nodeinfo 1.0** use `import` code like the following:
+
+```
+import "github.com/reiver/go-nodeinfo/1.0"
 ```
 
 ## Installation
