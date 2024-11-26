@@ -1,6 +1,8 @@
 package nodeinfo
 
 import (
+	"encoding/json"
+
 	"github.com/reiver/go-nodeinfo/internal"
 )
 
@@ -12,6 +14,8 @@ type NodeInfo struct {
 	Usage Usage
 	MetaData map[string]any
 }
+
+var _ json.Marshaler = NodeInfo{}
 
 func (receiver NodeInfo) MarshalJSON() ([]byte, error) {
 	const version string = "2.0"
