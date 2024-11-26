@@ -6,12 +6,12 @@ import (
 	"github.com/reiver/go-opt"
 )
 
-type Instance struct {
+type Instance2Dot2 struct {
 	Name        opt.Optional[string]
 	Description opt.Optional[string]
 }
 
-func (receiver Instance) MarshalJSON() ([]byte, error) {
+func (receiver Instance2Dot2) MarshalJSON() ([]byte, error) {
 	var buffer [256]byte
 	var bytes []byte = buffer[0:0]
 

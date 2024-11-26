@@ -8,7 +8,7 @@ import (
 	"github.com/reiver/go-nodeinfo/shared"
 )
 
-func NodeInfo2Dot2MarshalJSON(version string, instance shared.Instance, software shared.Software2Dot1, protocols []string, services shared.Services1, openRegistrations bool, usage shared.Usage2Dot2, metadata map[string]any) ([]byte, error) {
+func NodeInfo2Dot2MarshalJSON(version string, instance shared.Instance2Dot2, software shared.Software2Dot1, protocols []string, services shared.Services1, openRegistrations bool, usage shared.Usage2Dot2, metadata map[string]any) ([]byte, error) {
 	var buffer [256]byte
 	var bytes []byte = buffer[0:0]
 
