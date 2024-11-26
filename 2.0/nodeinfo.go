@@ -17,7 +17,7 @@ type NodeInfo struct {
 }
 
 var _ json.Marshaler = NodeInfo{}
-var _ net.http = NodeInfo{}
+var _ http.Handler = NodeInfo{}
 
 func (receiver NodeInfo) MarshalJSON() ([]byte, error) {
 	const version string = "2.0"
