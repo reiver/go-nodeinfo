@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 )
 
-type Services struct {
+type Services1 struct {
 	Inbound  []string
 	Outbound []string
 }
 
-func (receiver Services) MarshalJSON() ([]byte, error) {
+func (receiver Services1) MarshalJSON() ([]byte, error) {
 
 	var buffer [256]byte
 	var bytes []byte = buffer[0:0]

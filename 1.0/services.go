@@ -4,4 +4,4 @@ import (
 	"github.com/reiver/go-nodeinfo/shared"
 )
 
-type Services = shared.Services
+type Services = shared.Services1
