@@ -7,7 +7,7 @@ import (
 )
 
 type Usage struct {
-	Users Users
+	Users Users1
 	LocalPosts opt.Optional[string]
 	LocalComments opt.Optional[string]
 }

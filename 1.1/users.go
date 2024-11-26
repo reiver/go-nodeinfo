@@ -4,4 +4,4 @@ import (
 	"github.com/reiver/go-nodeinfo/shared"
 )
 
-type Users = shared.Users
+type Users = shared.Users1

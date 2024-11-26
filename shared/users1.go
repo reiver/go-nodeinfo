@@ -6,13 +6,13 @@ import (
 	"github.com/reiver/go-opt"
 )
 
-type Users struct {
+type Users1 struct {
 	Total          opt.Optional[string]
 	ActiveHalfYear opt.Optional[string]
 	ActiveMonth    opt.Optional[string]
 }
 
-func (receiver Users) MarshalJSON() ([]byte, error) {
+func (receiver Users1) MarshalJSON() ([]byte, error) {
 	var buffer [256]byte
 	var bytes []byte = buffer[0:0]
 
