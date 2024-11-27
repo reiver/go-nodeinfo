@@ -67,6 +67,7 @@ func JSONServeHTTP(responseWriter http.ResponseWriter, request *http.Request, js
 			return
 		}
 
+		header.Add("Access-Control-Allow-Origin", "*")
 		header.Add("Cache-Control", "max-age=907")
 		header.Add("Content-Digest", cacheDigest)
 		header.Add("Content-Type", "application/json; charset=utf-8")
