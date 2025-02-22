@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"github.com/reiver/go-erorr"
 	"github.com/reiver/go-opt"
 
 	"github.com/reiver/go-nodeinfo/internal"
@@ -206,6 +207,59 @@ func (receiver WellKnown) MarshalJSON() ([]byte, error) {
 	bytes = append(bytes, `]}`...)
 
 	return bytes, nil
+}
+
+func (receiver *WellKnown) UnmarshalJSON(bytes []byte) error {
+	if nil == receiver {
+		return errNilReceiver
+	}
+	if nil == bytes {
+		return errNilBytes
+	}
+
+	type internalWellKnown struct {
+		Links []internalLink `json:"links"`
+	}
+
+	var data internalWellKnown
+	{
+		err := json.Unmarshal(bytes, &data)
+		if nil != err {
+			return erorr.Errorf("nodeinfo: problem json-unmarshaling data from NodeInfo well-known API end-point: %w", err)
+		}
+	}
+
+	{
+		var nada WellKnown
+		*receiver = nada
+
+		for _, link := range data.Links {
+			switch link.Rel {
+			case "http://nodeinfo.diaspora.software/ns/schema/1.0":
+				if "" != link.HRef {
+					receiver.NodeInfo1 = opt.Something(link.HRef)
+				}
+			case "http://nodeinfo.diaspora.software/ns/schema/1.1":
+				if "" != link.HRef {
+					receiver.NodeInfo1Dot1 = opt.Something(link.HRef)
+				}
+			case "http://nodeinfo.diaspora.software/ns/schema/2.0":
+				if "" != link.HRef {
+					receiver.NodeInfo2 = opt.Something(link.HRef)
+				}
+			case "http://nodeinfo.diaspora.software/ns/schema/2.1":
+				if "" != link.HRef {
+					receiver.NodeInfo2Dot1 = opt.Something(link.HRef)
+				}
+			case "http://nodeinfo.diaspora.software/ns/schema/2.2":
+				if "" != link.HRef {
+					receiver.NodeInfo2Dot2 = opt.Something(link.HRef)
+				}
+			}
+		}
+	}
+
+	return nil
 }
 
 func (receiver WellKnown) ServeHTTP(responseWriter http.ResponseWriter, request *http.Request) {
