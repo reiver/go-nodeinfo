@@ -1,15 +1,13 @@
 package nodeinfo
 
-var (
-	// UserAgent is the User-Agent used by any (internal) HTTP-client in this package when making an HTTP-request to any server.
-	// This can be changed to customize the User-Agent sent.
-	//
-	// For example:
-	//
-	//	import "github.com/reiver/go-nodeinf"
-	//	
-	//	// ...
-	//	
-	//	nodeinfo.UserAgent = "ExampleAppt/2.71 (+http://example.com/example-app)"
-	UserAgent = "reiver-nodeinfo/0.0 (+https://github.com/reiver/go-nodeinfo)"
+import (
+	"github.com/reiver/go-nodeinfo/shared"
 )
+
+func SetUserAgent(value string) {
+	shared.UserAgent = value
+}
+
+func UserAgent() string {
+	return shared.UserAgent
+}
