@@ -6,10 +6,10 @@ var (
 	//
 	// For example:
 	//
-	//	import "github.com/reiver/go-nodeinf"
+	//	import "github.com/reiver/go-nodeinfo"
 	//	
 	//	// ...
 	//	
-	//	nodeinfo.UserAgent = "ExampleAppt/2.71 (+http://example.com/example-app)"
+	//	nodeinfo.SetUserAgent("ExampleAppt/2.71 (+http://example.com/example-app)")
 	UserAgent = "reiver-nodeinfo/0.0 (+https://github.com/reiver/go-nodeinfo)"
 )
