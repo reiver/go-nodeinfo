@@ -10,6 +10,6 @@ var (
 	//	
 	//	// ...
 	//	
-	//	nodeinfo.SetUserAgent("ExampleAppt/2.71 (+http://example.com/example-app)")
-	UserAgent = "reiver-nodeinfo/0.0 (+https://github.com/reiver/go-nodeinfo)"
+	//	nodeinfo.SetUserAgentText("ExampleAppt/2.71 (+http://example.com/example-app)")
+	UserAgentText = "reiver-nodeinfo/0.0 (+https://github.com/reiver/go-nodeinfo)"
 )

@@ -37,7 +37,7 @@ func getURL(url *gourl.URL) (WellKnown, error) {
 		if nil == httprequest.Header {
 			httprequest.Header = http.Header{}
 		}
-		httprequest.Header.Add("User-Agent", UserAgent)
+		httprequest.Header.Add("User-Agent", UserAgentText())
 	}
 
 	var httpresponse *http.Response

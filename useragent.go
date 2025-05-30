@@ -4,7 +4,7 @@ import (
 	"github.com/reiver/go-nodeinfo/shared"
 )
 
-// SetUserAgent sets the User-Agent used by any (internal) HTTP-client in this package when making an HTTP-request to any server.
+// SetUserAgentText sets the User-Agent used by any (internal) HTTP-client in this package when making an HTTP-request to any server.
 //
 // For example:
 //
@@ -12,14 +12,14 @@ import (
 //	
 //	// ...
 //	
-//	nodeinfo.SetUserAgent("ExampleAppt/2.71 (+http://example.com/example-app)")
+//	nodeinfo.SetUserAgentText("ExampleAppt/2.71 (+http://example.com/example-app)")
 //
-// You can get the value of the User-Agent by calling [UserAgent].
-func SetUserAgent(value string) {
-	shared.UserAgent = value
+// You can get the value of the User-Agent by calling [UserAgentText].
+func SetUserAgentText(value string) {
+	shared.UserAgentText = value
 }
 
-// UserAgent returns the User-Agent used by any (internal) HTTP-client in this package when making an HTTP-request to any server.
+// UserAgentText returns the User-Agent used by any (internal) HTTP-client in this package when making an HTTP-request to any server.
 //
 // For example:
 //
@@ -27,9 +27,9 @@ func SetUserAgent(value string) {
 //	
 //	// ...
 //	
-//	userAgent := nodeinfo.UserAgent()
+//	userAgent := nodeinfo.UserAgentText()
 //
-// This can be changed to customize the User-Agent sent using [SetUserAgent].
-func UserAgent() string {
-	return shared.UserAgent
+// This can be changed to customize the User-Agent sent using [SetUserAgentText].
+func UserAgentText() string {
+	return shared.UserAgentText
 }
