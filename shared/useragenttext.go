@@ -1,7 +1,7 @@
 package shared
 
 var (
-	// UserAgent is the User-Agent used by any (internal) HTTP-client in this package when making an HTTP-request to any server.
+	// UserAgentText is the User-Agent used by any (internal) HTTP-client in this package when making an HTTP-request to any server.
 	// This can be changed to customize the User-Agent sent.
 	//
 	// For example:
