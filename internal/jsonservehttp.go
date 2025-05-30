@@ -6,6 +6,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+
+	"github.com/reiver/go-nodeinfo/shared"
 )
 
 func JSONServeHTTP(responseWriter http.ResponseWriter, request *http.Request, jsonMarshaler json.Marshaler) {
@@ -72,6 +74,9 @@ func JSONServeHTTP(responseWriter http.ResponseWriter, request *http.Request, js
 		header.Add("Content-Digest", cacheDigest)
 		header.Add("Content-Type", "application/json; charset=utf-8")
 		header.Add("ETag", `"`+eTag+`"`)
+		if servertext := shared.ServerText; "" != servertext {
+			header.Add("Server", servertext)
+		}
 	}
 
 	{
