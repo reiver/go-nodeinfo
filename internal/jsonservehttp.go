@@ -7,6 +7,8 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/reiver/go-http500"
+
 	"github.com/reiver/go-nodeinfo/shared"
 )
 
@@ -15,17 +17,11 @@ func JSONServeHTTP(responseWriter http.ResponseWriter, request *http.Request, js
 		return
 	}
 	if nil == request {
-		var code int = http.StatusInternalServerError
-		var text string = http.StatusText(code)
-
-		http.Error(responseWriter, text, code)
+		http500.InternalServerError(responseWriter, request)
 		return
 	}
 	if nil == jsonMarshaler {
-		var code int = http.StatusInternalServerError
-		var text string = http.StatusText(code)
-
-		http.Error(responseWriter, text, code)
+		http500.InternalServerError(responseWriter, request)
 		return
 	}
 
@@ -35,10 +31,7 @@ func JSONServeHTTP(responseWriter http.ResponseWriter, request *http.Request, js
 
 		bytes, err = jsonMarshaler.MarshalJSON()
 		if nil != err {
-			var code int = http.StatusInternalServerError
-			var text string = http.StatusText(code)
-
-			http.Error(responseWriter, text, code)
+			http500.InternalServerError(responseWriter, request)
 			return
 		}
 	}
@@ -62,10 +55,7 @@ func JSONServeHTTP(responseWriter http.ResponseWriter, request *http.Request, js
 	{
 		var header http.Header = responseWriter.Header()
 		if nil == header {
-			var code int = http.StatusInternalServerError
-			var text string = http.StatusText(code)
-
-			http.Error(responseWriter, text, code)
+			http500.InternalServerError(responseWriter, request)
 			return
 		}
 
