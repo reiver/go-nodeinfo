@@ -69,6 +69,46 @@ func TestResolveReference(t *testing.T) {
 			Host: "example.com",
 			Expected: "https://example.com/nodeinfo/2.0",
 		},
+
+
+
+		{
+			Reference: "http://mastodon.social/nodeinfo/2.0",
+			Host: "example.com",
+			Expected:  "http://mastodon.social/nodeinfo/2.0",
+		},
+		{
+			Reference: "http://mastodon.social/nodeinfo/2.0",
+			Scheme: "http",
+			Host: "example.com",
+			Expected:  "http://mastodon.social/nodeinfo/2.0",
+		},
+		{
+			Reference: "http://mastodon.social/nodeinfo/2.0",
+			Scheme: "https",
+			Host: "example.com",
+			Expected:  "http://mastodon.social/nodeinfo/2.0",
+		},
+
+
+
+		{
+			Reference: "https://mastodon.social/nodeinfo/2.0",
+			Host: "example.com",
+			Expected:  "https://mastodon.social/nodeinfo/2.0",
+		},
+		{
+			Reference: "https://mastodon.social/nodeinfo/2.0",
+			Scheme: "http",
+			Host: "example.com",
+			Expected:  "https://mastodon.social/nodeinfo/2.0",
+		},
+		{
+			Reference: "https://mastodon.social/nodeinfo/2.0",
+			Scheme: "https",
+			Host: "example.com",
+			Expected:  "https://mastodon.social/nodeinfo/2.0",
+		},
 	}
 
 	for testNumber, test := range tests {
