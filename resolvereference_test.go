@@ -13,60 +13,60 @@ func TestResolveReference(t *testing.T) {
 		Expected string
 	}{
 		{
-			Reference: "/.well-known/nodeinfo/2.0",
-			Host: "example.com",
+			Reference:             "/.well-known/nodeinfo/2.0",
+			Host:       "example.com",
 			Expected: "//example.com/.well-known/nodeinfo/2.0",
 		},
 		{
-			Reference: "/.well-known/nodeinfo/2.0",
-			Scheme: "http",
-			Host: "example.com",
+			Reference:                   "/.well-known/nodeinfo/2.0",
+			Scheme:   "http",
+			Host:            "example.com",
 			Expected: "http://example.com/.well-known/nodeinfo/2.0",
 		},
 		{
-			Reference: "/.well-known/nodeinfo/2.0",
-			Scheme: "https",
-			Host: "example.com",
+			Reference:                   "/.well-known/nodeinfo/2.0",
+			Scheme:    "https",
+			Host:             "example.com",
 			Expected: "https://example.com/.well-known/nodeinfo/2.0",
 		},
 
 
 
 		{
-			Reference: "/nodeinfo/2.0",
-			Host: "example.com",
+			Reference:              "/nodeinfo/2.0",
+			Host:       "example.com",
 			Expected: "//example.com/nodeinfo/2.0",
 		},
 		{
-			Reference: "/nodeinfo/2.0",
-			Scheme: "http",
-			Host: "example.com",
+			Reference:                   "/nodeinfo/2.0",
+			Scheme:   "http",
+			Host:            "example.com",
 			Expected: "http://example.com/nodeinfo/2.0",
 		},
 		{
-			Reference: "/nodeinfo/2.0",
-			Scheme: "https",
-			Host: "example.com",
+			Reference:                   "/nodeinfo/2.0",
+			Scheme:   "https",
+			Host:             "example.com",
 			Expected: "https://example.com/nodeinfo/2.0",
 		},
 
 
 
 		{
-			Reference: "nodeinfo/2.0",
-			Host: "example.com",
+			Reference:              "nodeinfo/2.0",
+			Host:       "example.com",
 			Expected: "//example.com/nodeinfo/2.0",
 		},
 		{
-			Reference: "nodeinfo/2.0",
-			Scheme: "http",
-			Host: "example.com",
+			Reference:                   "nodeinfo/2.0",
+			Scheme:   "http",
+			Host:            "example.com",
 			Expected: "http://example.com/nodeinfo/2.0",
 		},
 		{
-			Reference: "nodeinfo/2.0",
-			Scheme: "https",
-			Host: "example.com",
+			Reference:                    "nodeinfo/2.0",
+			Scheme:   "https",
+			Host:             "example.com",
 			Expected: "https://example.com/nodeinfo/2.0",
 		},
 
